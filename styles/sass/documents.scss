@@ -1,0 +1,73 @@
+@import "./variables";
+
+*{
+    font-family: $font;
+}
+
+body{
+    background-color: $rich-black;
+}
+
+#header{
+    text-align: center;
+    color: $dutch-white;
+    font-size: larger;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.item{
+    display: flex; //flex box
+    flex-flow: row nowrap; //flow horizontally, no wrap
+    justify-content: space-between; //position the 3 items (but we still need to fix it)
+    position: relative; //need this for centering the img
+    align-items: center; //center them on the y axis of the container
+    padding-left: 25px; //extra space on left and right sides
+    padding-right: 25px; //extra space on left and right sides
+    background-color: $myrtle-green; //color
+    width: 50%; 
+    height: 100px;
+    border-radius: 10px; //I like my rounded borders
+    border: 2px solid $dutch-white;
+    color: $dutch-white;
+    font-size: larger;
+    margin-bottom: 25px; //give some space on the bottom of each item
+
+    &:nth-child(odd){
+        background-color: $raw-umber;
+    }
+
+    img{
+        border-radius: 50px;
+        border: 1px solid $dutch-white;
+        width: 75px;
+        height: 75px;
+        position: absolute; // the container is position relative
+        left: 50%; //center the image
+        transform: translateX(-50%); //center the image
+    }
+
+    a{
+        color: inherit;
+    }
+
+    .lock{
+        color: $rofous;     
+    }
+
+}
+
+.discord{
+    background: rgb(63, 62, 62);
+}
+
+.sparty{
+    background: darkgreen;
+}
