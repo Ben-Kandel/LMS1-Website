@@ -1,0 +1,31 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0d1f2dff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #8a6552ff;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: #e4d6a7ff;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: #8a6552ff;
+}
+/*# sourceMappingURL=navbar.css.map */

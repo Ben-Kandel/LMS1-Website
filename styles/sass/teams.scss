@@ -1,0 +1,65 @@
+@import "./variables";
+
+*{
+    font-family: $font;
+}
+
+body{
+    background-color: $rich-black;
+}
+
+#header{
+    text-align: center;
+    color: $dutch-white;
+    font-size: larger;
+}
+
+#container{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.team-member{
+    display: flex; //flex
+    position: relative; //lets us put the <a> tag in the corners (if we want)
+    flex-flow: column nowrap; //elements flow vertically
+    align-items: center; //put everything in the center
+    padding: 10px;
+    margin: 5px;
+    background-color: $myrtle-green;
+    border-radius: 10px;
+    border: 2px inset $dutch-white;
+    color: $dutch-white;
+    width: 300px;
+    height: 400px;
+
+    &:nth-child(odd){
+        background-color: $raw-umber;
+    }
+
+    img{
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 50px;
+    }
+
+    a{
+        color: $rofous;
+        position: absolute; //lets us put this in the corner
+        bottom: 0;
+        right: 0;
+        text-decoration: none; //no underline
+        margin-right: 4px; //don't want it to collide with the box
+        &[href*= "linkedin.com/"]{
+            background: url(https://linkedin.com/favicon.ico) no-repeat left;
+            padding-left: 19px;
+        }
+        &[href*= "github.com/"]{
+            background: url(https://github.com/favicon.ico) no-repeat left;
+            background-size: 16px; //make it smaller
+            padding-left: 19px;
+        }
+    }
+}

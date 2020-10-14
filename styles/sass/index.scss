@@ -1,0 +1,42 @@
+@import "./variables";
+
+*{
+    font-family: $font;
+}
+
+body{
+    background-color: $rich-black;
+}
+
+#header{
+    font-size: larger;
+    text-align: center;
+    color: $dutch-white;
+}
+
+#container{
+    display: flex; //flex
+    flex-flow: column nowrap; //flow vertically, no wrapping
+    background-color: $myrtle-green; //the background color
+    width: 60%; //how wide this container should be
+    margin: auto; //make sure the container itself is in the center of the screen
+    border-radius: 20px;
+    border: 2px solid $raw-umber;
+    text-align: center;
+    padding: 15px;
+
+    .item{
+        color: $rich-black;
+        font-size: 16px;
+        
+        h2{
+            color: $dutch-white;
+        }
+
+        a{
+            color: $rofous;
+        }
+    }
+
+
+}

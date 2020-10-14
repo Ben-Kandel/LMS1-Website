@@ -1,0 +1,80 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #0d1f2dff;
+}
+
+#header {
+  text-align: center;
+  color: #e4d6a7ff;
+  font-size: larger;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+.team-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #377771ff;
+  border-radius: 10px;
+  border: 2px inset #e4d6a7ff;
+  color: #e4d6a7ff;
+  width: 300px;
+  height: 400px;
+}
+
+.team-member:nth-child(odd) {
+  background-color: #8a6552ff;
+}
+
+.team-member img {
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50px;
+}
+
+.team-member a {
+  color: #A30300;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+.team-member a[href*="linkedin.com/"] {
+  background: url(https://linkedin.com/favicon.ico) no-repeat left;
+  padding-left: 19px;
+}
+
+.team-member a[href*="github.com/"] {
+  background: url(https://github.com/favicon.ico) no-repeat left;
+  background-size: 16px;
+  padding-left: 19px;
+}
+/*# sourceMappingURL=teams.css.map */
