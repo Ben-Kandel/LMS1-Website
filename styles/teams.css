@@ -46,6 +46,7 @@ body {
   color: #e4d6a7ff;
   width: 300px;
   height: 400px;
+  text-align: center;
 }
 
 .team-member:nth-child(odd) {

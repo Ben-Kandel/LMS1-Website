@@ -34,6 +34,7 @@ body{
     color: $dutch-white;
     width: 300px;
     height: 400px;
+    text-align: center; //align the p tag
 
     &:nth-child(odd){
         background-color: $raw-umber;
