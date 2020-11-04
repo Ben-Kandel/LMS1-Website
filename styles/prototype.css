@@ -1,0 +1,25 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #0d1f2dff;
+}
+
+#header {
+  text-align: center;
+  color: #e4d6a7ff;
+  font-size: larger;
+}
+
+#container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#container #the-gif {
+  width: 400px;
+  height: 350px;
+}
+
+/*# sourceMappingURL=prototype.css.map */

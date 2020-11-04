@@ -1,0 +1,26 @@
+@import "./variables";
+
+*{
+    font-family: $font;
+}
+
+body{
+    background-color: $rich-black;
+}
+
+#header{
+    text-align: center;
+    color: $dutch-white;
+    font-size: larger;
+}
+
+#container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    #the-gif{
+        width: 400px;
+        height: 350px;
+    }
+}
