@@ -16,6 +16,30 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: #8a6552ff;
+  padding: 15px;
+  width: 30%;
+  height: 750px;
+  border: 2px solid #377771ff;
+  border-radius: 10px;
+  margin: auto;
+  color: #e4d6a7ff;
+}
+#container #button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 50%;
+}
+#container #button-container button {
+  background-color: #377771ff;
+}
+#container #button-container button:hover {
+  background-color: #e4d6a7ff;
+}
+#container #button-container button:focus, #container #button-container button:active {
+  outline: none;
+  border: 1px solid #e4d6a7ff;
 }
 #container #the-gif {
   width: 400px;

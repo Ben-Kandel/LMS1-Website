@@ -15,12 +15,42 @@ body{
 }
 
 #container{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    display: flex; //make it flex
+    flex-flow: column nowrap; //make it flow vertically
+    align-items: center; //align everything horizontally
+    background-color: $raw-umber;
+    padding: 15px;
+    width: 30%; //make it smaller
+    height: 750px;
+    border: 2px solid $myrtle-green; //give it a border
+    border-radius: 10px; //give the border rounded corners
+    margin: auto; //center the container
+    color: $dutch-white; //text color
+
+    #button-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 50%;
+
+        button{
+            background-color: $myrtle-green;
+            &:hover{
+                background-color: $dutch-white;
+            }
+            &:focus, &:active{
+                outline: none;
+                border: 1px solid $dutch-white;
+            }
+        }
+
+    }
 
     #the-gif{
         width: 400px;
         height: 350px;
+        // border: 2px solid $myrtle-green;
     }
+
+
 }
