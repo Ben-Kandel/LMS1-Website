@@ -14,36 +14,32 @@ body {
 
 #container {
   display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  justify-content: center;
+}
+#container #left-box {
+  display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: #8a6552ff;
-  padding: 15px;
-  width: 30%;
-  height: 750px;
-  border: 2px solid #377771ff;
-  border-radius: 10px;
-  margin: auto;
-  color: #e4d6a7ff;
-}
-#container #button-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  width: 50%;
-}
-#container #button-container button {
   background-color: #377771ff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #e4d6a7ff;
+  margin-right: 15em;
 }
-#container #button-container button:hover {
-  background-color: #e4d6a7ff;
+#container #left-box img {
+  width: 350px;
+  height: 300px;
 }
-#container #button-container button:focus, #container #button-container button:active {
-  outline: none;
-  border: 1px solid #e4d6a7ff;
-}
-#container #the-gif {
-  width: 400px;
-  height: 350px;
+#container #right-box {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #8a6552ff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #e4d6a7ff;
+  margin-right: 15em;
 }
 
 /*# sourceMappingURL=prototype.css.map */

@@ -15,42 +15,76 @@ body{
 }
 
 #container{
-    display: flex; //make it flex
-    flex-flow: column nowrap; //make it flow vertically
-    align-items: center; //align everything horizontally
-    background-color: $raw-umber;
-    padding: 15px;
-    width: 30%; //make it smaller
-    height: 750px;
-    border: 2px solid $myrtle-green; //give it a border
-    border-radius: 10px; //give the border rounded corners
-    margin: auto; //center the container
-    color: $dutch-white; //text color
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    justify-content: center;
 
-    #button-container{
+    #left-box{
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        width: 50%;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-color: $myrtle-green;
+        padding: 50px;
+        border-radius: 10px;
+        border: 2px solid $dutch-white;
+        margin-right: 15em;
 
-        button{
-            background-color: $myrtle-green;
-            &:hover{
-                background-color: $dutch-white;
-            }
-            &:focus, &:active{
-                outline: none;
-                border: 1px solid $dutch-white;
-            }
+        img{
+            width: 350px;
+            height: 300px;
         }
-
     }
 
-    #the-gif{
-        width: 400px;
-        height: 350px;
-        // border: 2px solid $myrtle-green;
+    #right-box{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $raw-umber;
+        padding: 50px;
+        border-radius: 10px;
+        border: 2px solid $dutch-white;
+        margin-right: 15em;
     }
-
-
 }
+
+
+// #container{
+//     display: flex; //make it flex
+//     flex-flow: column nowrap; //make it flow vertically
+//     align-items: center; //align everything horizontally
+//     background-color: $raw-umber;
+//     padding: 15px;
+//     width: 30%; //make it smaller
+//     height: 750px;
+//     border: 2px solid $myrtle-green; //give it a border
+//     border-radius: 10px; //give the border rounded corners
+//     margin: auto; //center the container
+//     color: $dutch-white; //text color
+
+//     #button-container{
+//         display: flex;
+//         flex-flow: row nowrap;
+//         justify-content: space-between;
+//         width: 50%;
+
+//         button{
+//             background-color: $myrtle-green;
+//             &:hover{
+//                 background-color: $dutch-white;
+//             }
+//             &:focus, &:active{
+//                 outline: none;
+//                 border: 1px inset $dutch-white;
+//             }
+//         }
+
+//     }
+
+//     #the-gif{
+//         width: 400px;
+//         height: 350px;
+//         // border: 2px solid $myrtle-green;
+//     }
+
+
+// }
