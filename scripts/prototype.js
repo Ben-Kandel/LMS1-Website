@@ -5,19 +5,20 @@ let text = document.getElementById('dynamic-text');
 let mappings = {
     scenario1: {
         name: "Scenario 1",
-        link: "images/correction.gif",
+        link: "images/prototype/correction.gif",
         title: "Correction",
         description: "The system is in the on state and is waiting to detect the vehicle moving from the lane's center. Once the vehicle moves from the lane, a warning light notifies the user, and the vehicle's LMS system returns the vehicle to the center of the lane.",
+        
     },
     scenario2: {
         name: "Scenario 2",
-        link: "images/switching_lanes.gif",
+        link: "images/prototype/switching_lanes.gif",
         title: "Switching Lanes",
         description: "The system is in the on state, and the driver uses their turn signal to make a lane change. The turn signal disables the system temporarily and allows the vehicle to perform the lane change. Once the lane change has finished, the vehicle’s LMS system is enabled once again. ",
     },
     scenario3: {
         name: "Scenario 3",
-        link: "images/speed.gif",
+        link: "images/prototype/speed.gif",
         title: "Speed",
         description: "The system is not able to be used when the vehicle is going under 35 miles per hour (MPH). Once the vehicle accelerates to 35 MPH, the system is turned on.",
     }

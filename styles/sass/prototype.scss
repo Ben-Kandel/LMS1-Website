@@ -44,5 +44,28 @@ body{
         border: 2px solid $dutch-white;
         margin-right: $spacing;
         width: 250px;
+
+        #legend{
+
+            img{
+                &.stretched{
+                    width: 60px;
+                    height: 40px;
+                }
+                &.box{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .item{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                
+                padding-bottom: 10px;
+            }
+        }
+
     }
 }
