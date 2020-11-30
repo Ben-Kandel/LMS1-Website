@@ -27,7 +27,6 @@ let mappings = {
 function b1Clicked(){
     title.innerText = mappings.scenario1.name;
     image.src = mappings.scenario1.link;
-    //testing..
     text.innerHTML = `<h1>${mappings.scenario1.title}</h1><p1>${mappings.scenario1.description}</p1>`
 }
 
@@ -45,5 +44,5 @@ function b3Clicked(){
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('hello');
-    b1Clicked();
-})
+    b1Clicked(); //go to the first scenario on startup
+});
