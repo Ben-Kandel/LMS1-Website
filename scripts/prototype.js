@@ -5,7 +5,7 @@ let descriptions = {
     off: "This scenario shows when LMS is completely turned off by the user. No corrections will be made to the vehicle, as the system is not on.",
     signal38: "This scenario shows the vehicle using turn signals to change lanes to tell the system to disengage temporarily. When the driver activates the turn signals, the system goes into an idle state which is seen by the orange indicator light on the dash. Once the user has finished their lane change and the turn signal is disengaged, the system goes back into an on and active state. Here, LMS is active before and after the lane change is made since the speed is over 35 mph.",
     signal33: "This scenario shows the vehicle using turn signals to change lanes to tell the system to disengage temporarily. Here, LMS is inactive before, during, and after the lane change is made since the speed is under 35 mph.",
-        torque38: "In this scenario, the driver doesn’t use the turn signals and initiates a lane change. Because there is force on the wheel, the system determines this is intentional and switches into an idle state. Once the lane change is complete and there is no longer force on the steering wheel, the system re-engages.",
+    torque38: "In this scenario, the driver doesn’t use the turn signals and initiates a lane change. Because there is force on the wheel, the system determines this is intentional and switches into an idle state. Once the lane change is complete and there is no longer force on the steering wheel, the system re-engages.",
     torque33: "In this scenario, the driver doesn’t use the turn signals and initiates a lane change. The system is idle since the speed is below 35 mph. After the lane change and there is no longer force on the wheel, the system remains idle because the speed is too slow.",
     drift38: "This scenario is of the system running under ideal conditions. The light indicates that the system is active since the driver is driving over 35 mph. The car drifts toward the lane marker to the left until the warning light is displayed. After the warning light is displayed and the car continues to drift, the LMS takes corrective action and steers the vehicle back into the middle of the lane.",
     drift33: "In this scenario, the vehicle is drifting out of its lane. Since the speed is below 35 mph, the system is idle and therefore does not make any corrections or notify the driver that they are leaving their lane.",
@@ -48,17 +48,27 @@ let image = document.getElementById('the-gif');
 function updateForm(){
 
     let hideOption = (elementName) => {
-        document.getElementById(elementName).style.visibility = "hidden";
-        document.getElementById(elementName + 'label').style.visibility = "hidden";
-    }
+        document.getElementById(elementName).style.visibility = 'hidden';
+        document.getElementById(elementName + 'label').style.visibility = 'hidden';
+    };
 
     let showOption = (elementName) => {
-        document.getElementById(elementName).style.visibility = "visible";
-        document.getElementById(elementName + 'label').style.visibility = "visible";
-    }
+        document.getElementById(elementName).style.visibility = 'visible';
+        document.getElementById(elementName + 'label').style.visibility = 'visible';
+    };
 
     let enableOption = (elementName) => {
         document.getElementById(elementName).checked = true;
+    };
+
+    let renameToDrift = () => {
+        document.getElementById('dynamic-title').innerText = 'Drift';
+        document.getElementById('drift1label').innerText = 'Left Drift';
+    };
+
+    let renameToSwerve = () => {
+        document.getElementById('dynamic-title').innerText = 'Swerve';
+        document.getElementById('drift1label').innerText = 'Left Swerve';
     };
 
     
@@ -66,9 +76,12 @@ function updateForm(){
     // if there is an obstacle
     if(document.getElementById('obstacle1').checked){
         showOption('drift2');
+        // we need to change some text
+        renameToSwerve();
     }else{
         hideOption('drift2');
         enableOption('drift1');
+        renameToDrift();
     }
 
     // if no lane change option is selected

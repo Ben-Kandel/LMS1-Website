@@ -20,8 +20,7 @@ body {
   border-radius: 20px;
   padding: 20px;
 }
-
-.item {
+#container .item {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -38,10 +37,10 @@ body {
   font-size: larger;
   margin-bottom: 25px;
 }
-.item:nth-child(odd) {
+#container .item:nth-child(odd) {
   background-color: #8a6552ff;
 }
-.item img {
+#container .item img {
   border-radius: 50px;
   border: 1px solid #e4d6a7ff;
   width: 75px;
@@ -50,15 +49,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.item a {
+#container .item a {
   color: inherit;
 }
-.item .lock {
+#container .item .lock {
   color: #A30300;
 }
 
-.discord {
-  background: #3f3e3e;
-}
-
-/*# sourceMappingURL=documents.css.map */
+/*# sourceMappingURL=srs.css.map */
