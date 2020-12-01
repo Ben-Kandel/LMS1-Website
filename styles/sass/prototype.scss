@@ -1,7 +1,5 @@
 @import "./variables";
 
-$spacing: 20em;
-
 *{
     font-family: $font;
 }
@@ -16,56 +14,199 @@ body{
     font-size: larger;
 }
 
-#container{
-    display: flex;
-    flex-flow: row nowrap;
-    margin: auto;
-    justify-content: center;
-    color: $dutch-white; //text color
-
-    #left-box{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        
-        background-color: $myrtle-green;
-        padding: 50px;
-        border-radius: 10px;
-        border: 2px solid $dutch-white;
-        margin-right: $spacing;
+#footer{
+    text-align: center; //center it
+    margin-top: 100px;
+    a{
+        color: $rofous;
     }
+}
 
-    #right-box{
-        display: flex;
-        flex-flow: column nowrap;
-        background-color: $raw-umber;
-        padding: 50px;
-        border-radius: 10px;
-        border: 2px solid $dutch-white;
-        margin-right: $spacing;
-        width: 250px;
+#container{
 
-        #legend{
+    display: flex;
+    flex-flow: row nowrap; //horizontal
+    margin: auto;
+    justify-content: center; //put everthing in this flexbox in the center
+    color: $dutch-white; //text color
+    margin-right: 11.5em;
+    
+    #left-side{
 
-            img{
-                &.stretched{
-                    width: 60px;
-                    height: 40px;
-                }
-                &.box{
-                    width: 60px;
-                    height: 60px;
-                }
+        
+        #the-form{
+            display: flex; //flex display
+            flex-flow: column nowrap; //go down
+            width: 400px;
+            height: 600px;
+            padding: 10px; //give it some more space
+            background-color: $raw-umber;
+            border-radius: 10px; //rounded border
+            border: 2px solid $dutch-white;
+
+            #the-fieldset{
+                border: none;
             }
 
-            .item{
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
+            input[type='radio']{
+                transform: scale(1.15);
+            }
+
+            #form-header{
+                text-align: center;
+
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 45px;
+                    height: 25px;
+                  }
+                  
+                  // css from w3 schools for rounded slider button
+                  // I tweaked some of the values to make it smaller
+
+                  /* Hide default HTML checkbox */
+                  .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                  }
+                  
+                  /* The slider */
+                  .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+                  
+                  .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 18px;
+                    width: 18px;
+                    left: 3px;
+                    bottom: 3px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+                  
+                  input:checked + .slider {
+                    background-color: #2196F3;
+                  }
+                  
+                  input:focus + .slider {
+                    box-shadow: 0 0 1px #2196F3;
+                  }
+                  
+                  input:checked + .slider:before {
+                    -webkit-transform: translateX(22px);
+                    -ms-transform: translateX(22px);
+                    transform: translateX(22px);
+                  }
+                  
+                  /* Rounded sliders */
+                  .slider.round {
+                    border-radius: 34px;
+                  }
+                  
+                  .slider.round:before {
+                    border-radius: 50%;
+                  }
+
+            }
+
+            .row{
                 
-                padding-bottom: 10px;
+                .title{
+                    text-align: center;
+                }
+
+                .form{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-evenly;
+                }
             }
         }
+    }
 
+    #right-side{
+        
+        // doing this so the image can be centered
+        display: flex;
+        flex-flow: column nowrap;
+        
+        align-items: center;
+
+        background-color: $myrtle-green;
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        border: 2px solid $dutch-white;
+        padding-top: 20px;
+        
+        margin-right: 3px;
+        margin-left: 3px;        
+
+        #description-text{
+            padding-top: inherit;
+            text-align: center;
+            text-indent: 25px;
+            word-wrap: break-word;
+        }
+
+        img{
+            width: 534px;
+            height: 400px;
+            border-radius: 15px;
+        }
+
+    }
+
+    #legend{
+
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 25px;
+
+        width: 200px;
+        height: 600px;
+        background-color: $raw-umber;
+        border: 2px solid $dutch-white;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+
+        .item{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        img{
+            &.stretched{
+                width: 60px;
+                height: 40px;
+            }
+            &.box{
+                width: 60px;
+                height: 60px;
+            }
+            &.smaller-box{
+                width: 50px;
+                height: 50px;
+            }
+            &.arrow{
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
 }

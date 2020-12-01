@@ -1,0 +1,79 @@
+@import "./variables";
+
+$spacing: 20em;
+
+*{
+    font-family: $font;
+}
+
+body{
+    background-color: $rich-black;
+}
+
+#header{
+    text-align: center;
+    color: $dutch-white;
+    font-size: larger;
+}
+
+#footer{
+    text-align: center; //center it
+    margin-top: 50px;
+    a{
+        color: $rofous;
+    }
+}
+
+#container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    justify-content: center;
+    color: $dutch-white; //text color
+
+    #left-box{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        
+        background-color: $myrtle-green;
+        padding: 50px;
+        border-radius: 10px;
+        border: 2px solid $dutch-white;
+        margin-right: $spacing;
+    }
+
+    #right-box{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $raw-umber;
+        padding: 50px;
+        border-radius: 10px;
+        border: 2px solid $dutch-white;
+        margin-right: $spacing;
+        width: 250px;
+
+        #legend{
+
+            img{
+                &.stretched{
+                    width: 60px;
+                    height: 40px;
+                }
+                &.box{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .item{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}

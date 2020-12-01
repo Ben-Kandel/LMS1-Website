@@ -15,41 +15,129 @@
         </ul>
     </div>
     <div id="header">
-        <h1>Prototype</h1>
+        <h1>Prototype v2</h1>
     </div>
     <div id="container">
-        <div id="left-box" class="item">
-            <h1 id="scenario-title">Scenario *insert_name_here*</h1>
-            <img id="the-gif">
-            <h1>Change</h1>
-            <div id="button-container">
-                <button autofocus="autofocus" onclick="b1Clicked()">Scenario 1</button>
-                <button onclick="b2Clicked()">Scenario 2</button>
-                <button onclick="b3Clicked()">Scenario 3</button>
-            </div>
+        <div id="left-side">
+            <form id="the-form">
+                <div id="form-header">
+                    <h3>Vehicle On?</h3>
+                    <label class="switch">
+                        <input type="checkbox" id="system-status">
+                        <span class="slider round"></span>
+                    </label>
+                    
+                </div>
+                <fieldset id="the-fieldset">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Obstacle</h3>
+                        </div>
+                        <div class="form">
+                            <label for="obstacle1" id="obstacle1label">On</label>
+                            <input type="radio" id="obstacle1" name="obstacle" value="On">
+                            <label for="obstacle2" id="obstacle2label">Off</label>
+                            <input type="radio" id="obstacle2" name="obstacle" value="Off" checked>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Drift</h3>
+                        </div>
+                        <div class="form">
+                            <label for="drift1" id="drift1label">Left Drift</label>
+                            <input type="radio" id="drift1" name="drift" value="left-drift" checked>
+                            <label for="drift2" id="drift2label">None</label>
+                            <input type="radio" id="drift2" name="drift" value="none">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Speed</h3>
+                        </div>
+                        <div class="form">
+                            <label for="speed1" id="speed1label">33 mph</label>
+                            <input type="radio" id="speed1" name="speed" value="33" checked>
+                            <label for="speed2" id="speed2label">38 mph</label>
+                            <input type="radio" id="speed2" name="speed" value="38">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Lane Changing</h3>
+                        </div>
+                        <div class="form">
+                            <label for="lane1" id="lane1label">None</label>
+                            <input type="radio" id="lane1" name="lane" value="none" checked>
+                            <label for="lane2" id="lane2label">Turn Signal</label>
+                            <input type="radio" id="lane2" name="lane" value="signal">
+                            <label for="lane3" id="lane3label">Torque on Wheel</label>
+                            <input type="radio" id="lane3" name="lane" value="torque">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Road Type</h3>
+                        </div>
+                        <div class="form">
+                            <label for="road1" id="road1label">Straight</label>
+                            <input type="radio" id="road1" name="road" value="straight" checked>
+                            <label for="road2" id="road2label">Curved</label>
+                            <input type="radio" id="road2" name="road" value="curvy">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h3>Error</h3>
+                        </div>
+                        <div class="form">
+                            <label for="error1" id="error1label">No Error</label>
+                            <input type="radio" id="error1" name="error" value="no" checked>
+                            <label for="error2" id="error2label">Trigger Error</label>
+                            <input type="radio" id="error2" name="error" value="yes">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        <div id="right-box" class="item">
-            <div id="dynamic-text">
-                <h1>other box</h1>
-                <p1>in this scenario, blah blah...</p1>
+        <div id="right-side">
+            <img id="the-gif">
+            <p1 id="description-text">The system is off.</p1>
+        </div>
+        <div id="legend">
+            <h1>Legend</h1>
+            <div class="item">
+                <img class="box" src="images/prototype/v2/active.png">
+                <p1>The system is active.</p1>
             </div>
-            <div id="legend">
-                <h1>Legend</h1>
-                <div class="item">
-                    <img class="stretched" src="images/prototype/lms_off.png">
-                    <p1>The red warning icon shows that the system is inactive or off.</p1>
-                </div>
-                <div class="item">
-                    <img class="box" src="images/prototype/warning_light_green.png">
-                    <p1>The green car with lanes icon shows that the system is active.</p1>
-                </div>
-                <div class="item">
-                    <img class="box" src="images/prototype/warning_light_orange.png">
-                    <p1>The orange car with lanes icon shows that the system is in an idle state.</p1>
-                </div>
+            <div class="item">
+                <img class="box" src="images/prototype/v2/idle.png">
+                <p1>The system is idling.</p1>
+            </div>
+            <div class="item">
+                <img class="box" src="images/prototype/v2/officon.png">
+                <p1>The sytem is off.</p1>
+            </div>
+            <div class="item">
+                <img class="arrow" src="images/prototype/v2/arrow.png">
+                <p1>The turn signal is on.</p1>
+            </div>
+            <div class="item">
+                <img class="smaller-box" src="images/prototype/v2/warning.png">
+                <p1>LMS is performing corrective actions.</p1>
+            </div>
+            <div class="item">
+                <img class="stretched" src="images/prototype/v2/error.png">
+                <p1>Warning issued to driver.</p1>
             </div>
         </div>
     </div>
+    <div id="footer">
+        <a href="./oldprototype.html">v1</a>
+    </div>
     <script src="scripts/prototype.js"></script>
+    <noscript>You must have JavaScript enabled in order to use the prototype.</noscript>
 </body>
 </html>

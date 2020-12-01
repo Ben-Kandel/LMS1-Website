@@ -1,0 +1,65 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #0d1f2dff;
+}
+
+#header {
+  text-align: center;
+  color: #e4d6a7ff;
+  font-size: larger;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 50px;
+}
+#footer a {
+  color: #A30300;
+}
+
+#container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  justify-content: center;
+  color: #e4d6a7ff;
+}
+#container #left-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #377771ff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #e4d6a7ff;
+  margin-right: 20em;
+}
+#container #right-box {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #8a6552ff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #e4d6a7ff;
+  margin-right: 20em;
+  width: 250px;
+}
+#container #right-box #legend img.stretched {
+  width: 60px;
+  height: 40px;
+}
+#container #right-box #legend img.box {
+  width: 60px;
+  height: 60px;
+}
+#container #right-box #legend .item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=oldprototype.css.map */

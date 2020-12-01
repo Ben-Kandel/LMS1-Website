@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LMS1 Project Site</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/oldprototype.css">
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div id="header">
+        <h1>Prototype</h1>
+    </div>
+    <div id="container">
+        <div id="left-box" class="item">
+            <h1 id="scenario-title">Scenario *insert_name_here*</h1>
+            <img id="the-gif">
+            <h1>Change</h1>
+            <div id="button-container">
+                <button autofocus="autofocus" onclick="b1Clicked()">Scenario 1</button>
+                <button onclick="b2Clicked()">Scenario 2</button>
+                <button onclick="b3Clicked()">Scenario 3</button>
+            </div>
+        </div>
+        <div id="right-box" class="item">
+            <div id="dynamic-text">
+                <h1>other box</h1>
+                <p1>in this scenario, blah blah...</p1>
+            </div>
+            <div id="legend">
+                <h1>Legend</h1>
+                <div class="item">
+                    <img class="stretched" src="images/prototype/v1/lms_off.png">
+                    <p1>The red warning icon shows that the system is inactive or off.</p1>
+                </div>
+                <div class="item">
+                    <img class="box" src="images/prototype/v1/warning_light_green.png">
+                    <p1>The green car with lanes icon shows that the system is active.</p1>
+                </div>
+                <div class="item">
+                    <img class="box" src="images/prototype/v1/warning_light_orange.png">
+                    <p1>The orange car with lanes icon shows that the system is in an idle state.</p1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="./prototype.html">back to v2</a>
+    </div>
+    <script src="scripts/oldprototype.js"></script>
+</body>
+</html>
