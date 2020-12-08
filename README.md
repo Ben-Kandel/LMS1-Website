@@ -7,9 +7,6 @@ It features the project background, description, the team, and links to importan
 
 It was designed by me, the webmaster for the project.
 
-The project was developed in visual studio code. HTML and CSS (transpiled from sass) were the only languages used.
+The project was developed in visual studio code. HTML, CSS (transpiled from sass), and JS were the only languages used.
 
-
-
-
-The project is currently in progress. This readme will be updated throughout the semester.
+Update 12/8/2020: Final website submitted. It will no longer be updated. Was a fun project :)
